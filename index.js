@@ -1,3 +1,3 @@
 import NumberAnimated from './src/numberAnimated';
 
-export { NumberAnimated };
+export default NumberAnimated;
