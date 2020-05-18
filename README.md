@@ -2,7 +2,7 @@
 
 ![Image](https://github.com/petrvmakarov/react-native-number-animated/blob/master/readme/demo.gif?raw=true)
 
-## Instalation
+## Installation
 ```
 npm i react-native-number-animated
 ```
