@@ -1,0 +1,30 @@
+{
+  "name": "react-native-number-animated",
+  "version": "0.1.0",
+  "description": "Animated numeric label for React Native",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petrvmakarov/react-native-number-animated.git"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "label",
+    "animation",
+    "numeric",
+    "incrementing"
+  ],
+  "author": "PMak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/petrvmakarov/react-native-number-animated/issues"
+  },
+  "homepage": "https://github.com/petrvmakarov/react-native-number-animated#readme",
+  "devDependencies": {
+    "metro-react-native-babel-preset": "^0.58.0"
+  }
+}
