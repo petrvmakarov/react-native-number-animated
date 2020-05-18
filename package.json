@@ -1,6 +1,6 @@
 {
   "name": "react-native-number-animated",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Animated numeric label for React Native",
   "main": "index.js",
   "scripts": {
