@@ -1,37 +1,34 @@
-## Welcome to GitHub Pages
+# Animated numeric label for React Native
 
-You can use the [editor on GitHub](https://github.com/petrvmakarov/react-native-number-animated/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+![Image](https://github.com/petrvmakarov/react-native-number-animated/blob/master/readme/demo.gif?raw=true)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](readme/demo.gif)
+## Instalation
+```
+npm i react-native-number-animated
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Usage
+```
+  import NumberAnimated from 'react-native-number-animated';
+```
+Just place  ```<NumberAnimated value={some_numeric_value} />``` tag, provide a numeric value to the ```value``` prop.
+Use ```nullValue``` prop to substitute null value output (default is ```--```) 
 
-### Jekyll Themes
+```<NumberAnimated value={some_numeric_value} nullValue="--"/>```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/petrvmakarov/react-native-number-animated/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### Customize render
+Use render function to have desiered output:
+```
+<NumberAnimated value={value}>
+  {(v) => {
+    return (
+    <Text style={{ fontSize: 40 }}>{v}</Text>
+    );
+  }}
+</NumberAnimated>
+```
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Props
+ - ```value: numeric``` no default value
+ - ```nullValue: string``` default value is ```--```
+ - ```children: (value: numeric)``` no default value, provides incrmented numeric value for each animation frame
