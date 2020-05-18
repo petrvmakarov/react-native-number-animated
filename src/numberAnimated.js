@@ -32,7 +32,7 @@ export default class NumberAnimated extends React.Component<Props, State> implem
   sharedAnimationId = null;
 
   onSharedAnimationFrame = ({value}) => {
-    const {value: toValue} = this.props;
+    const toValue = +this.props.value;
     let nextValue = Math.round(toValue * value);
     if (this.prevValue < toValue) {
       const add = toValue - this.prevValue;
@@ -60,7 +60,7 @@ export default class NumberAnimated extends React.Component<Props, State> implem
 
   componentDidUpdate = (prevProps, prevState, snapshot) => {
     if (prevProps.value !== this.props.value) {
-      this.prevValue = prevProps.value;
+      this.prevValue = +prevProps.value;
       this.animate();
     }
   };
